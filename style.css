@@ -1,0 +1,407 @@
+/* Stile base */
+
+body {
+	color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("immagini/tetris.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+header {
+  padding: 1px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 35px;
+  background-image: url("immagini/tetris.jpg");
+}
+
+.esplorazione a:link, visited, hover {
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.esplorazione a:link {
+  color: #1285ea;
+}
+
+.esplorazione a:visited {
+  color: #1285ea;
+}
+
+.esplorazione a:hover {
+  color: white;
+}
+
+.esplorazione a:active {
+  color: #07365f;
+}
+
+a:link, visited, hover {
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+
+div.intro {
+	text-align: left;
+  color: black;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 70px;
+}
+
+div.descrizione {
+	color: white;
+  text-align: center;
+  background-color: #333333;
+  padding: 20px;
+}
+
+div.esplorazione {
+	text-align: center;
+}
+
+/* Navbar orizzontale */
+
+ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+ul.horizontal li {
+  float: left;
+}
+
+ul.horizontal li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal li a:hover:not(.active) {
+  background-color: #07365f;
+}
+
+ul.horizontal li a.active {
+  background-color:#1285ea;
+}
+
+ul.horizontal2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+ul.horizontal2 li {
+  float: left;
+}
+
+ul.horizontal2 li a {
+  display: inline-block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal2 li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+ul.horizontal2 a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+button {
+  padding: 2.5px 5px;
+  border-bottom-width: 2px;
+}
+
+/* Adattività */
+
+.width94 {
+  width:94%;
+  }
+@media screen and (max-width: 600px) {
+  .width94 {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+*, html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin-right:40px;
+}
+
+hr {
+  padding: 5 0px;
+  margin: 1 0px;
+  padding-bottom: 0 0px;
+}
+
+.card-body {
+ text-align: left;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.search {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+}
+
+.search:hover {
+  background-color: #555;
+}
+
+/* stile per la pagina del catalogo */
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  background-color: white;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.responsive {
+  padding: 10px 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  height: auto;
+  background: #404040;
+  padding: 20px;
+  color:white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista {
+  float: center;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.btn {
+	margin: 3px;
+}
+
+/* Elemento carosello */
+.carousel-inner {background-color: rgba(26, 26, 26, .7); left: 0; right: 0; width: 100%;}
+.carousel-inner > h1 {font-family: 'Eagle Lake', cursive; font-size: 2em;}
+.carousel-inner > h2 {font-size: 1.5em;}
+.carousel-control-prev .carousel-control-next {z-index: 10 !important;}
+
+.d-block {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+/* Pagina iniziale carosello */
+.carousel-home img {height: 100vh;}
+
+/* Oggetto del carosello */
+.carousel-item .carousel-item {background-color: rgba(26, 26, 26, .3);}
+.carousel-item .carousel-item img {background-color: #3A515F; height: 500px; width: auto !important;}
+
+/* carousel media query */
+@media screen and (max-width: 769px) {
+    .carousel-inner .carousel-item > img {height: auto;}
+}
+
+/* tabs */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+footer {
+  color: white;
+}
+
+.esplorazione {
+  color: white;
+}

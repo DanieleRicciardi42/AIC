@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<!-- charset, bootstrap e adattamento -->
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- titolo e icona -->
+		<title>Cultura e letteratura italiana nei videogiochi</title>
+		<link rel="icon" type="image/x-icon" href="immagini/gamepad-solid.ico"/>
+
+		<!-- foglio di stile -->
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+
+	<body>
+		<!-- Header testata -->
+		<header>Cultura e letteratura italiana nei videogiochi</header>
+
+		<!-- Barra di navigazione orizzontale -->
+		<div class="topnav" id="intro">
+			<ul class="horizontal">
+  				<li><a href="home.html">Home</a></li>
+  				<li><a href="index.html">Introduzione</a></li>
+  				<li><a class="active" href="lista.html">Catalogo</a></li>
+  				<li class="rightli" style="float:right">
+  					<input type="text" placeholder="Scrivi un nome...">
+  					<button class="search" type="submit">Cerca<i class="fa fa-search"></i></button>
+  					<a href="#Info">Info</a>
+  				</li>
+			</ul>
+		</div>
+
+		<!-- Navbar del catalogo -->
+		<nav><ul>
+			<h5 style="font-size:2.5vw;">Visualizza</h5>
+			<p style="font-size:1.5vw;"><button class="button" id="defaultOpen" onclick="openCity(event, 'luoghi')">Luoghi</button></p>
+			<p style="font-size:1.5vw;"><button class="button" id="defaultOpen" onclick="openCity(event, 'libri')">Libri</button></p>
+			<p style="font-size:1.5vw;"><button class="button" id="defaultOpen" onclick="openCity(event, 'videogiochi')">Videogiochi</button></p>
+			<p style="font-size:1.5vw;"><button class="button" id="defaultOpen" onclick="openCity(event, 'eventi')">Eventi</button></p>
+			<h5 style="font-size:2.5vw;">Ordine alfabetico</h5>
+   			<button type="button" class="btn btn-secondary">A-Z</button>
+   			<button type="button" class="btn btn-secondary">Z-A</button>
+   			<br>
+   			<br>
+   			<h5 style="font-size:2.5vw;">Filtra per</h5>   			
+  			<div class="dropdown dropend">
+   			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+     		Data
+    		</button>
+    			<ul class="dropdown-menu">
+    				<input type="checkbox"><label>2010</label><br>
+    				<input type="checkbox"><label>2011</label><br>
+    				<input type="checkbox"><label>2012</label><br>
+   				</ul>
+   			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+     		Luogo
+    		</button>
+    			<ul class="dropdown-menu">
+    				<input type="checkbox"><label>Firenze</label><br>
+    				<input type="checkbox"><label>Napoli</label><br>
+    				<input type="checkbox"><label>Volterra</label><br>
+   				</ul>
+   			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+     		Media
+    		</button>
+    			<ul class="dropdown-menu">
+    				<input type="checkbox"><label>Libri</label><br>
+    				<input type="checkbox"><label>Videogiochi</label><br>
+    				<input type="checkbox"><label>Musei</label><br>
+   				</ul>
+  			</div>
+			<br>
+		</nav></ul>
+
+		<lista>
+			<div id="luoghi" class="tabcontent">
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/mann.jpg">
+						<img src="immagini/mann.jpg" alt="Museo Archeologico Nazionale di Napoli">
+						</a>
+						<div class="desc">MANN</div>
+  					</div>
+				</div>							
+
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/volterra-graffiti.jpg">
+						<img src="immagini/volterra-graffiti.jpg" alt="Manicomio di Volterra">
+						</a>
+						<div class="desc">Manicomio di Volterra</div>
+  					</div>
+				</div>
+			</div>
+
+			<div id="libri" class="tabcontent">
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/cosmicomiche.jpg">
+						<img src="immagini/cosmicomiche.jpg" alt="copertina de Le Cosmicomiche" width="600" height="400">
+						</a>
+						<div class="desc">Le Cosmicomiche</div>
+  					</div>
+				</div>
+
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/commedia.jpg">
+						<img src="immagini/commedia.jpg" alt="copertina de la Divina Commedia" width="600" height="400">
+						</a>
+						<div class="desc">La Divina Commedia</div>
+  					</div>
+				</div>
+			</div>
+
+			<div id="eventi" class="tabcontent">
+				<div class="responsive">
+					<div class="gallery">
+						<a href="item.html">
+						<img src="immagini/townoflights.jpeg" alt="copertina de The Town of Light event">
+						</a>
+						<div class="desc"><a href="item.html" style="color: black; padding: 0 0px">The Town of Light Event</a></div>
+  					</div>
+				</div>
+
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/svilupparty.png">
+						<img src="immagini/svilupparty.png" alt="logo Svilupparty" width="600" height="400">
+						</a>
+						<div class="desc">Svilupparty 2023</div>
+  					</div>
+				</div>	
+			</div>					
+
+			<div id="videogiochi" class="tabcontent">
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/Martha is dead.jpg">
+						<img src="immagini/Martha is dead.jpg" alt="copertina di Martha is Dead" width="600" height="400">
+						</a>
+						<div class="desc">Martha is Dead</div>
+  					</div>
+				</div>	
+
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/fatherandsonanteprima.jpg">
+						<img src="immagini/fatherandsonanteprima.jpg" alt="copertina di Father and Son" width="600" height="400">
+						</a>
+						<div class="desc">Father and Son</div>
+  					</div>
+  				</div>
+
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/dantesinferno.jpg">
+						<img src="immagini/dantesinferno.jpg" alt="copertina di Dante's Inferno" width="600" height="400">
+						</a>
+						<div class="desc">Dante's Inferno</div>
+  					</div>
+				</div>
+
+				<div class="responsive">
+					<div class="gallery">
+						<a href="townoflight.html">
+						<img src="immagini/the-town-of-light-pc-gioco-steam-cover.jpg" alt="copertina di The Town of Light" width="600" height="400">
+						</a>
+						<div class="desc"><a href="item.html" style="color: black; padding: 0 0px">The Town of Light</a></div>
+  					</div>
+				</div>
+
+				<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="immagini/genesisnoiranteprima.jpg">
+						<img src="immagini/genesisnoiranteprima.jpg" alt="copertina di Genesis Noir" width="600" height="400">
+						</a>
+						<div class="desc">Genesis Noir</div>
+  					</div>
+				</div>
+			</div>
+
+		<div class="clearfix"></div>
+		<div class="pagination">
+  			<a href="#">&laquo;</a>
+  			<a href="#" class="active">1</a>
+  			<a href="#">2</a>
+  			<a href="#">3</a>
+  			<a href="#">4</a>
+  			<a href="#">5</a>
+  			<a href="#">6</a>
+  			<a href="#">&raquo;</a>
+		</div>
+
+</lista>
+<section>
+	<div class="descrizione">
+				<h2>Il progetto</h2>
+				<p><strong>Cultura e letteratura italiana nei <span>videogiochi</span></strong> è un progetto proposto per l'esame <br> "Digital Humanities e Patrimonio culturale", proposto da <a href="https://centri.unibo.it/dharc/en"target=":_blank" title="Apre il sito del centro di ricerca DH.arc in una nuova finestra">DH.arc dell'Università di Bologna</a></p>
+			</div>
+			<br>
+			<div class="esplorazione">
+				<p><a class="licenze" href="#intro">Torna su</a></p>
+				<p><a class="licenze" href="#">Credits</a> | <a class="licenze" href="#">Licenze</a></p> <!-- href è placeholder -->
+			</div>
+		</section>
+		<!-- Elemento footer per il piede di pagina -->
+		<footer>
+			<p>&copy; Copyright Daniele Ricciardi 2023 - Corso di Digital Humanities e Patrimonio Culturale</p>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src="bootstrap/js/bootstrap.bundle.js"></script>
+	</body>
+</html>
