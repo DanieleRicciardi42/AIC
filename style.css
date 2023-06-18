@@ -159,7 +159,7 @@ button {
 
 .width94 {
   width:94%;
-  }
+}
 @media screen and (max-width: 600px) {
   .width94 {
     width:100%;
@@ -184,7 +184,7 @@ button {
   .responsive {
     width: 100%;
   }
-}
+} 
 
 *, html {
   box-sizing: border-box;
@@ -197,7 +197,12 @@ button {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
-  margin-right:40px;
+}
+
+.oggetto {
+  margin: 20px;
+  margin-left: 293px;
+  margin-right: 50px;
 }
 
 hr {
@@ -230,29 +235,37 @@ hr {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #1a1a1a;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #07365f;
+}
+
+.button:active {
+  background-color: #1285ea;
 }
 
 .search {
   border: none;
-  outline: 0;
+  outline: 1px;
   display: inline-block;
   color: white;
-  background-color: #000;
+  background-color: #262626;
   text-align: center;
   cursor: pointer;
   width: auto;
 }
 
 .search:hover {
-  background-color: #555;
+  background-color: #07365f;
+}
+
+.search:active {
+  background-color: #1285ea;
 }
 
 /* stile per la pagina del catalogo */
@@ -270,22 +283,23 @@ hr {
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #c47dcf;
   color: white;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #55225d;
 }
 
 div.gallery {
   border: 1px solid #ccc;
   padding: 5px 5px;
+  margin-left: 25px;
   background-color: white;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 3px solid #1285ea;
 }
 
 div.gallery img {
@@ -296,7 +310,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: #d6d9db;
 }
 
 .responsive {
@@ -318,6 +332,8 @@ nav {
   background: #404040;
   padding: 20px;
   color:white;
+  margin:15px;
+  margin-top:20px;
 }
 
 nav ul {
@@ -328,7 +344,7 @@ nav ul {
 .lista {
   float: center;
   padding: 20px;
-  width: 70%;
+  width: 80%;
   background-color: #f1f1f1;
   height: 300px;
 }
@@ -362,7 +378,7 @@ input[type=checkbox], input[type=radio] {
 
 /* carousel media query */
 @media screen and (max-width: 769px) {
-    .carousel-inner .carousel-item > img {height: auto;}
+  .carousel-inner .carousel-item > img {height: auto;}
 }
 
 /* tabs */
@@ -384,17 +400,16 @@ input[type=checkbox], input[type=radio] {
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #07365f;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: #1285ea;
 }
 
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
+  padding: 18px 12px;
   border-top: none;
 }
 
@@ -403,5 +418,29 @@ footer {
 }
 
 .esplorazione {
+  color: white;
+}
+
+/* breadcrumb per la navigazione */
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: gray;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1.2vw;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
   color: white;
 }
