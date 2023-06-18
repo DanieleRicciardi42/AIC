@@ -203,6 +203,7 @@ button {
   margin: 20px;
   margin-left: 293px;
   margin-right: 50px;
+  width: auto;
 }
 
 hr {
@@ -443,4 +444,25 @@ ul.breadcrumb li a {
 }
 ul.breadcrumb li a:hover {
   color: white;
+}
+
+aside {
+  width: 15%;
+  padding: 15px;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: right;
+  color:white;
+}
+
+img.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
