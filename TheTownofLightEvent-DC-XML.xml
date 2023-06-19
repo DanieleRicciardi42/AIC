@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 
-<!--  root e namespaces -->
-<mp:metadata xmlns:mp="http://example.org/MyProject/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://example.org/MyProject/ http://example.org/MyProject/schema.xsd">
+<!-- root e namespaces -->
+<mp:metadata xmlns:mp="https://danielericciardi42.github.io/AIC/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
 
-	<article>
+	<event>
+
 		<dc:title>The Town of Light Event</dc:title>
 		<dc:creator xsi:type="mp:viaf" mp:ref="https://viaf.org/viaf/144251024/#Volterra_(Italy)">Manicomio di Volterra</dc:creator>
+		<dc:creator>IULM</dc:creator>
 		<dc:date xsi:type="dcterms:W3CDTF">2021-10-02</dc:date>
 		<dc:subject> event, location, videogame, article </dc:subject>
 
-		<dc:description>Nel weekend dell’1 e 2 ottobre a Milano si è tenuto The Town of Light Event, una due giorni per dialogare sulla tematica della salute mentale.</dc:description>
-		<dc:description xml:lang="en">
-			The Town of Light Event was held on the weekend of 1 and 2 October in Milan, a two-day event to discuss the issue of mental health.</dc:description>
-			<dc:publisher xsi:type="mp:viaf" mp:ref="https://viaf.org/viaf/144251024/#Volterra_(Italy)">Manicomio di Volterra</dc:publisher>
-			<dc:coverage xsi:type="dcterms:TGN" mp:ref="http://vocab.getty.edu/page/tgn/7006305">Volterra</dc:coverage>
-			<dcterms:isPartOf xsi:type="dcterms:URI">https://www.comune.volterra.pi.it/home</dcterms:isPartOf>
-			<dc:identifier xsi:type="dcterms:URI">https://manicomiodivolterra.it/ </dc:identifier>
-			<type>web article</type>
-			<dc:language>it, en</dc:language>
-			<tag>#townoflight, #videogame</tag>
+		<dc:description xml:lang="it">Nel weekend dell’1 e 2 ottobre a Milano si è tenuto The Town of Light Event, una due giorni per dialogare sulla tematica della salute mentale.</dc:description>
+		<dc:description xml:lang="en">The Town of Light Event was held on the weekend of 1 and 2 October in Milan, a two-day event to discuss the issue of mental health.</dc:description>
+		<dc:publisher xsi:type="mp:sito" mp:ref="https://manicomiodivolterra.it">Manicomio di Volterra</dc:publisher>
+		<dc:coverage xsi:type="dcterms:TGN" mp:ref="http://vocab.getty.edu/page/tgn/7006305">Volterra</dc:coverage>
+		<dcterms:isPartOf xsi:type="dcterms:URI">https://www.comune.volterra.pi.it/home</dcterms:isPartOf>
+		<dc:identifier xsi:type="dcterms:URI">https://manicomiodivolterra.it/ </dc:identifier>
+		<type>event</type>
+		<dc:language>it, en</dc:language>
+		<tag>#townoflight, #videogame</tag>
 
-			<!-- forma controllata delle date -->
-			<dcterms:modified xsi:type="dcterms:W3CDTF">2021-10-22</dcterms:modified>
+		<!-- forma controllata delle date -->
+		<dcterms:modified xsi:type="dcterms:W3CDTF">2021-10-22</dcterms:modified>
 
-			<!-- forma controllata del formato -->
-			<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
+		<!-- forma controllata del formato -->
+		<dc:format xsi:type="dcterms:IMT">xml</dc:format>
 
-			<!-- URL con le specifiche di dcterms -->
-			<dc:source>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</dc:source>
-		</article>
-	</mp:metadata>
+		<!-- URL con le specifiche di dcterms -->
+		<dc:source>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</dc:source>
+	</event>
+</mp:metadata>
